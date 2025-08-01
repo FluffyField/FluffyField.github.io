@@ -5,7 +5,7 @@ body {
   color: white ;
   font-size: 150% ;
   
-cursor: url(https://fluffyfield.github.io/assets/heart.png), auto;
+cursor: url('https://fluffyfield.github.io/assets/heart.png'), auto;
 }
 
 #container {

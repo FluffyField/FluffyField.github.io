@@ -1,0 +1,175 @@
+:root {
+
+                /* colors */
+                --content: #151515;
+
+            }
+
+            /* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-image: url("https://fluffyfield.neocities.org/assets/DRbg.gif") ;
+  background-size: cover ;
+  font-family: "PixelOperatorMono" ;
+  color: white ;
+  font-size: 115% ;
+  
+}
+
+
+@font-face {
+    font-family: "PixelOperatorMono";
+    src: url('https://fluffyfield.neocities.org/fonts/8bitOperatorPlus-Regular.ttf') format('truetype') ;
+}
+@font-face {
+    font-family: "PixelOperatorMono";
+    src: url('https://fluffyfield.neocities.org/fonts/8bitOperatorPlus-Bold.ttf') format('truetype') ;
+    font-weight: bold;
+}
+
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+} 
+
+
+            #container {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            #container a {
+                font-weight: bold;
+            }
+
+
+
+            #flex {
+                display: flex;
+            }
+
+
+
+            /* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+            aside {
+                background-color: black;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+                border:solid;
+                border-color: white;
+                border-width: 15;
+            }
+
+
+            main {
+                background-color: #151515;
+                flex: 1;
+                padding: 30px;
+                order: 2;
+                border:solid;
+                border-color: white;
+                border-width: 30;
+
+            }
+
+
+            #leftSidebar {
+                order: 1;
+            }
+
+            footer {
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: white;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+#blinkies{
+  margin:0;
+  overflow-x: hidden;
+}
+#blinkiesmarquee{
+  overflow-x: hidden;
+    width: max-content;
+  padding: 2 100%;
+  }
+
+
+
+
+
+
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+
+@media only screen and (min-width: 900px) {
+  #mobileonly {
+    display: none;
+  }
+}
+
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+     
+                aside {
+                    width: 100%;
+                }
+
+
+                main {
+                    order: 1;
+                    width: 100%;
+                    flex-wrap: wrap;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+                
+                #sidebar { order: 2;}
+
+            }

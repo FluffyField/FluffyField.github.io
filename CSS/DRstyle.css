@@ -13,7 +13,7 @@
    "how to change link color." */
 
 body {
-  background-image: url("https://fluffyfield.neocities.org/assets/DRbg.gif") ;
+  background-image: url("https://fluffyfield.github.io/assets/DRbg.gif") ;
   background-size: cover ;
   font-family: "PixelOperatorMono" ;
   color: white ;
@@ -24,11 +24,11 @@ body {
 
 @font-face {
     font-family: "PixelOperatorMono";
-    src: url('https://fluffyfield.neocities.org/fonts/8bitOperatorPlus-Regular.ttf') format('truetype') ;
+    src: url('https://github.com/FluffyField/FluffyField.github.io/raw/refs/heads/main/fonts/8bitOperatorPlus-Regular.ttf') format('truetype') ;
 }
 @font-face {
     font-family: "PixelOperatorMono";
-    src: url('https://fluffyfield.neocities.org/fonts/8bitOperatorPlus-Bold.ttf') format('truetype') ;
+    src: url('https://github.com/FluffyField/FluffyField.github.io/raw/refs/heads/main/fonts/8bitOperatorPlus-Bold.ttf') format('truetype') ;
     font-weight: bold;
 }
 

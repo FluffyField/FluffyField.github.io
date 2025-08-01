@@ -1,6 +1,6 @@
 window.onload = () => {
     // copy below to add more pages
-    fetch('https://fulvern.neocities.org/sidebar.html') // the page we want to use for our sidebar
+    fetch('https://fluffyfield.github.io/htmls/sidebar') // the page we want to use for our sidebar
     .then(data => {
       return data.text()
     })

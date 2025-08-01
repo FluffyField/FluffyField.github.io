@@ -24,11 +24,11 @@ body {
 
 @font-face {
     font-family: "PixelOperatorMono";
-    src: url('https://fluffyfield.github.io/fonts/8bitOperatorPlus-Regular.ttf') format('truetype') ;
+    src: url('https://fluffyfield.github.io/fonts/PixelOperatorMono.ttf') format('truetype') ;
 }
 @font-face {
     font-family: "PixelOperatorMono";
-    src: url('https://fluffyfield.github.io/fonts/8bitOperatorPlus-Bold.ttf') format('truetype') ;
+    src: url('https://fluffyfield.github.io/fonts/PixelOperatorMono-bold.ttf') format('truetype') ;
     font-weight: bold;
 }
 

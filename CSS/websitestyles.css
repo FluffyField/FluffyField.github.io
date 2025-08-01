@@ -1,10 +1,10 @@
 @font-face {
   font-family: "eightbitfnt";
-  src: url('https://fluffyfield.neocities.org/fonts/8bitOperatorPlus-Regular.ttf') format('truetype') ;
+  src: url('https://fluffyfield.github.io/fonts/8bitOperatorPlus-Regular.ttf') format('truetype') ;
 }
 @font-face {
   font-family: "eightbitfnt";
-  src: url('https://fluffyfield.neocities.org/fonts/8bitOperatorPlus-Bold.ttf') format('truetype') ;
+  src: url('https://fluffyfield.github.io/fonts/8bitOperatorPlus-Bold.ttf') format('truetype') ;
   font-weight: bold;
 }
 
@@ -35,7 +35,7 @@ h1 {
 }
 
 #background {
-  background: url('https://fluffyfield.neocities.org/assets/bg.gif');
+  background: url('https://fluffyfield.github.io/assets/bg.gif');
   position: absolute;
   width: 100%;
   height: 700px;

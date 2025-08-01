@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://fluffyfield.neocities.org/assets/GonerBg.gif") ;
+  background-image: url("https://fluffyfield.github.io/assets/GonerBg.gif") ;
   background-size: cover ;
   font-family: "PixelOperatorMono" ;
   color: white ;
@@ -26,11 +26,11 @@ main{
   
 @font-face {
     font-family: "PixelOperatorMono";
-    src: url('https://fluffyfield.neocities.org/fonts/8bitOperatorPlus-Regular.ttf') format('truetype') ;
+    src: url('https://fluffyfield.github.io/fonts/8bitOperatorPlus-Regular.ttf') format('truetype') ;
 }
 @font-face {
     font-family: "PixelOperatorMono";
-    src: url('https://fluffyfield.neocities.org/fonts/8bitOperatorPlus-Bold.ttf') format('truetype') ;
+    src: url('https://fluffyfield.github.io/fonts/8bitOperatorPlus-Bold.ttf') format('truetype') ;
     font-weight: bold;
 }
 

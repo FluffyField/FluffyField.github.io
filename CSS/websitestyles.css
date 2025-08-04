@@ -1,131 +1,354 @@
-@font-face {
-  font-family: "eightbitfnt";
-  src: url('https://fluffyfield.github.io/fonts/8bitOperatorPlus-Regular.ttf') format('truetype') ;
-}
-@font-face {
-  font-family: "eightbitfnt";
-  src: url('https://fluffyfield.github.io/fonts/8bitOperatorPlus-Bold.ttf') format('truetype') ;
-  font-weight: bold;
+* {
+    min-width: 0px;
 }
 
+@font-face {
+    font-family: DLTRN Mono;
+    src: url(/fonts/deltarune.ttf);
+  }
+  
+  @font-face {
+    font-family: DTM Mono;
+    src: url(/fonts/DTM-Mono.otf);
+  }
 
+@keyframes jingle {
+    25% {
+        rotate: -2.5deg;
+    } 50% {
+        rotate: 2.5deg;
+    } 75% {
+        rotate: -2.5deg;
+    } 100% {
+        rotate: 0deg;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px)
+    } 50% {
+        transform: translateY(-0.1em);
+    }
+}
+
+:root {
+    --primary-colour: rgb(75, 150, 160);
+    --secondary-colour: rgb(15, 30, 32);
+    --text-colour: rgb(180, 210, 210);
+    --shadow-colour: rgb(10, 12, 14);
+    --transparent: rgba(0, 0, 0, 0);
+}
 
 body {
-  background-color: black;
-  color: white;
-  font-family: eightbitfnt;
-  height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--secondary-colour);
+    background: url(/images/test_bg-min.png) center fixed;
+    background-size: cover;
+
+    color: var(--text-colour);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 25vw;
+
+    background: radial-gradient(var(--shadow-colour), var(--transparent) 75%);
 }
 
 h1 {
-  text-align: center;
-  font-size:30px;
-  top: 400px;
+    font: normal bold 4.25em DTM Mono;
 }
 
-#container {
-  position: relative;
-  height: auto;
+h2 {
+    font-family: DLTRN Mono;
+
+    margin: 0px;
+    padding: 0px;
+    
+    z-index: 999;
 }
 
-#title {
-  width: 50%;
-  margin: auto;
-  display: block;
+h3 {
+    margin: 0.25em;
+
+    font: 2.5em DTM Mono;
+    text-align: center;
 }
 
-#background {
-  background: url('https://fluffyfield.github.io/assets/bg.gif');
-  position: absolute;
-  width: 100%;
-  height: 700px;
-  display: block;
-  top: 70px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  box-shadow: 0 60px 80px 0px black inset,
-  0 -120px 80px 0px black inset;
-  text-align: center;
-  overflow: hidden;
-  z-index: -2;
+h3 a {
+    margin: 0.25em;
+
+    font: 0.75em DTM Mono;
+    text-align: center;
 }
 
-#selectionbox {
-  background-color: transparent;
-  color: white;
-  position: absolute;
-  width: 100%;
-  height: 90%;
-  top: 800px;
-  font-size:30px;
-  z-index: -2;
-}
-.button {
-  position: relative;
-  text-decoration: none;
-  color:white;
-}
-.button:hover {
-  color: yellow;
-}
-#wikibutton {
-  text-align: center;
-}
-#databasebutton {
-  top: 30px;
-  right: 20px;
-  float:right;
-}
-#dictionarybutton {
-  top: 30px;
-  left: 20px;
-  float:left;
+.sub-headers-for-desktop {
+    width: 75vw;
+    height: 0px;
 }
 
-#soul {
-  width:24px;
-  height:24px;
-  transform: translate(-50%, -50%);
-  display: none;
-  z-index: 4;
+.sub-headers-for-desktop h2 {
+    display: inline-block;
+    position: relative;
+
+    width: 5.125em;
+
+    font-size: 4em;
 }
 
-@media screen and (min-width: 1200px) {
-  h1 {
-    font-size:40px;
-  }
-  #selectionbox {
-    font-size:40px;
-  }
-  #databasebutton {
-    right: 40px;
-  }
-  #dictionarybutton {
-    left: 40px;
-  }
-  #soul {
-    width:32px;
-    height:32px;
-  }
+.sub-headers-for-mobile {
+    display: none;
+
+    font-size: 3.75em;
 }
 
-@media screen and (max-width: 650px) {
-  h1 {
-    font-size:25px;
-  }
-  #selectionbox {
-    font-size:20px;
-  }
-  #databasebutton {
-    right: 0px;
-  }
-  #dictionarybutton {
-    left: 0px;
-  }
-  #soul {
-    width:16px;
-    height:16px;
-  }
+h2:hover {
+    font-size: 4.25em;
 }
 
+#links-header {
+    top: -1.5em;
+    left: -4em;
+    rotate: -15deg;
 
+    animation: float 4.25s infinite;
+}
+
+#hey-hey-header {
+    top: -0.5em;
+    right: -7.5em;
+    rotate: 7.5deg;
+
+    animation: float 5s infinite;
+}
+
+#about-me-header {
+    top: -0.5em;
+    left: -0.25em;
+    rotate: -5deg;
+
+    animation: float 5.5s infinite;
+}
+
+#updates-header {
+    top: -0.425em;
+    right: -10em;
+    rotate: 2.5deg;
+
+    animation: float 6s infinite;
+}
+
+#contact-me-header {
+    width: 6.125em;
+    top: -0.25em;
+    rotate: -2.5deg;
+
+    animation: float 4s infinite;
+}
+
+#manga-header {
+    top: -0.75em;
+    rotate: -5deg;
+
+    animation: float 5s infinite;
+}
+
+#videos-header {
+    top: -0.75em;
+    right: -11.25em;
+    rotate: 5deg;
+
+    animation: float 5s infinite;
+}
+
+#blogs-header {
+    top: -1em;
+    rotate: -5deg;
+
+    animation: float 5s infinite;
+}
+
+#header-heading {
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 6.5vw;
+    margin: 1em;
+    padding: 2em;
+
+    text-align: center;
+}
+
+nav a, nav p {
+    font-size: 1.35em;
+}
+
+#buttons-and-images, #etc-gifs {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons-and-images *, #etc-gifs * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#buttons-and-images img{
+    width: 6.25em;
+}
+
+article {
+    max-width: 75vw;
+    margin: 1em;
+    padding: 2em;
+
+    text-align: left;
+}
+
+article, nav {
+    background: linear-gradient(black, var(--secondary-colour) 90%);
+
+    border: 0.25em double var(--primary-colour);
+    box-shadow: 0.75em 0.75em 0.5em var(--shadow-colour);
+}
+
+section {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+p, #buttons-and-images, nav a {
+    animation: fadeIn 1.5s forwards;
+}
+
+p, label, a {
+    font: 1.5em DTM Mono;
+    padding: 0.5em;
+
+    color: var(--text-colour);
+
+    text-shadow: 0.0625em 0.0625em 0.075em var(--primary-colour);
+}
+
+p > a {
+    padding: 0px;
+    font-size: 1.125em;
+}
+
+label {
+    align-items: center;
+
+    text-align: center;
+    font: italic 0.9em DTM Mono;
+}
+
+section img {
+    width: 100%;
+    height: 100%;
+}
+
+img, iframe {
+    flex-shrink: 0;
+    
+    max-width: 30em;
+    margin: 2.5em;
+    
+    object-fit: contain;
+
+    filter: sepia(1) brightness(85%) contrast(100%) saturate(115%) hue-rotate(135deg);
+    transition: all 0.25s;
+
+    border: 0.125em dotted var(--primary-colour);
+    box-shadow: 0.625em 0.625em 0.25em var(--shadow-colour);
+}
+
+img:hover, iframe:hover {
+    filter: sepia(0) brightness(100%) contrast(100%) saturate(100%) hue-rotate(0deg);
+    animation: jingle 0.375s forwards;
+}
+
+#blog-main {
+    width: 75vw;
+}
+
+.blog-section {
+    flex-direction: column;
+}
+
+.blog-link {
+    flex-direction: column;
+    padding: 1em;
+    margin: 2.25em 1em;
+
+    border: 0.125em solid var(--primary-colour);
+}
+
+.blog-link * {
+    margin: 0px;
+}
+
+.flex-break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+@media only screen and (max-width: 1280px) {
+    nav {
+        width: auto;
+        flex-flow: row wrap;
+    }
+
+    #buttons-and-images, #etc-gifs {
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    #etc-gifs img{
+        float: left;
+        width:  4.5em;
+        height: 4.5em;
+        object-fit: cover;
+    }
+
+    .sub-headers-for-desktop {
+        display: none;
+    }
+
+    .sub-headers-for-mobile {
+        display: inline ;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}

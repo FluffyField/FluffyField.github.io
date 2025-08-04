@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: DLTRN Mono;
-    src: url(/fonts/deltarune.ttf);
+    src: url('https://fluffyfield.github.io/fonts/deltarune.ttf');
   }
   
   @font-face {
     font-family: DTM Mono;
-    src: url(/fonts/DTM-Mono.otf);
+    src: url('https://fluffyfield.github.io/fonts/DTM-Mono.otf');
   }
 
 @keyframes jingle {

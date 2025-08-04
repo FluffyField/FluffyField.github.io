@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>???</title>
-    <link href="https://fluffyfield.github.io/CSS/websitestyles.css" rel="stylesheet" type="text/css" media="all">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>???</title>
+  <link href="https://fluffyfield.github.io/CSS/websitestyles.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background: black; /* or whatever your bg is */
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+
+    marquee {
+      margin-top: 10px;
+      color: #00ccff;
+    }
+  </style>
 </head>
 <body>
-    <article>
-        <section style="flex-flow: column wrap;">
-            <img src="https://fluffyfield.github.io/assets/ralsei_and_kris_waltz.gif" alt="Kris and Ralsei dancing in front of a dark fountain in the Dark World.">
-            <h2>Page Not Found</h2>
-            <p style="text-align: center;">
-                The page you are requesting for is in another dark world!
-                <br/><br/>
-                <i>Be sure to check that the URL is typed properly ya hear!?!?!</i>
-            </p>
-        </section>
-    </article>
-</body>
-</html>
-    <audio controls style="width: 200px;" loop autoplay id="music">
-    <source src="https://files.catbox.moe/9wjr4j.mp3" type="audio/mpeg">
-  </audio> 
+  <article>
+    <section style="flex-flow: column wrap;">
+      <img src="https://fluffyfield.github.io/assets/ralsei_and_kris_waltz.gif" alt="Kris and Ralsei dancing in front of a dark fountain in the Dark World.">
+      <h2>Page Not Found</h2>
+      <p>The page you are requesting for is in another dark world!
+        <br/><br/>
+        <i>Be sure to check that the URL is typed properly ya hear!?!?!</i>
+      </p>
+    </section>
+    <audio controls loop autoplay id="music" style="width: 200px;">
+      <source src="https://files.catbox.moe/9wjr4j.mp3" type="audio/mpeg">
+    </audio>
+    <marquee behavior="scroll" direction="left" scrollamount="4">
+      <p><strong>"WELCOME TO THE CITY" Snowgrave Alt - Toby Fox</strong></p>
+    </marquee>
+  </article>
+
   <script>
-  var audio = document.getElementById("music");
-  audio.volume = 0.2;
-</script>
-  <marquee behavior=scroll direction="left" scrollamount="4"><p><strong>"WELCOME TO THE CITY" Snowgrave Alt - Toby Fox</strong></p></marquee>
-  </center>
-  </body>
+    var audio = document.getElementById("music");
+    audio.volume = 0.2;
+  </script>
+</body>
 </html>

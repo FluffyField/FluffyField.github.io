@@ -1,41 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SURVEY_PROGRAM</title>
-    <link href="https://fluffyfield.github.io/CSS/projectsstyles.css" rel="stylesheet" type="text/css" media="all">
-    <link href="https://fluffyfield.github.io/assets/deltarune.png" rel="icon" type="image/x-icon">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SURVEY_PROGRAM</title>
+  <link href="https://fluffyfield.github.io/CSS/projectsstyles.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fluffyfield.github.io/assets/deltarune.png" rel="icon" type="image/x-icon" />
+  <style>
+    /* Just in case your external CSS is missing any of these */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background: black; /* Will be overridden if your projectsstyles.css has background-image */
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    a {
+      color: cyan;
+      text-decoration: none;
+    }
+
+    h1, h2 {
+      color: #00ccff;
+      margin: 20px;
+    }
+
+    audio {
+      margin: 10px 0;
+    }
+  </style>
 </head>
 
-  <body>
-  
- 
+<body>
+  <div id="container">
+    <main>
+      <h1>NO PROJECTS IN DEVELOPMENT.</h1>
+      <audio controls style="width: 200px;" loop autoplay id="music">
+        <source src="https://files.catbox.moe/ntc3sb.mp3" type="audio/mpeg">
+      </audio>
+      <h1>PROCEED?</h1>
+      <h2>
+        <strong>
+          <a href="https://fluffyfield.github.io/htmls/home" onclick="clicksound.playclip()" onmouseenter="mouseoversound.playclip()">Yes</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://fluffyfield.github.io/htmls/nowhere" onclick="clicksound.playclip()" onmouseenter="mouseoversound.playclip()">No</a>
+        </strong>
+      </h2>
+    </main>
+  </div>
 
-    <div id="container">
-    <main readability="22.199730094466936">
-
-        <center>
-        <h1>NO PROJECTS IN DEVELOPMENT.</h1>
-                       <audio controls style="width: 200px;" loop autoplay id="music">
-    <source src="https://files.catbox.moe/ntc3sb.mp3" type="audio/mpeg">
-  </audio> 
+  <script src="https://fluffyfield.github.io/JS/soundfx.js"></script>
   <script>
-  var audio = document.getElementById("music");
-  audio.volume = 0.2;
-</script>
-        <h1>PROCEED?</h1>
-        <br>
-        <h2><strong><a href="https://fluffyfield.github.io/htmls/home" onclick="clicksound.playclip()" onmouseenter="mouseoversound.playclip()" >Yes</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="https://fluffyfield.github.io/htmls/nowhere" onclick="clicksound.playclip()" onmouseenter="mouseoversound.playclip()">No</a></strong></h2>
-        </center>
-        </main>
-    </div>
-
-
-
-  
-  </body>
+    var audio = document.getElementById("music");
+    audio.volume = 0.2;
+  </script>
+</body>
 </html>
-<script src="https://fluffyfield.github.io/JS/soundfx.js"></script>
-<!--Tab Icon-->
-<link rel="icon" type="image/x-icon" href="https://fluffyfield.github.io/assets/heart.png"> 

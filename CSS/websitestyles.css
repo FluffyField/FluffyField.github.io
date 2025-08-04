@@ -55,7 +55,7 @@ body {
     text-align: center;
 
     background-color: var(--secondary-colour);
-    background: url(/images/test_bg-min.png) center fixed;
+    background: url('https://fluffyfield.github.io/assets/bg.gif') center fixed;
     background-size: cover;
 
     color: var(--text-colour);
